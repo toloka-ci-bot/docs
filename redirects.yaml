@@ -1,0 +1,3 @@
+common:
+  - from: /toloka-apps/
+    to: /toloka-apps/concepts/
