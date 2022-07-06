@@ -124,11 +124,13 @@ A _pool_ is a set of tasks sent out to Tolokers at the same time. One project ca
 
 At this step, upload your task data to Toloka.
 
-1. Create a TSV file with tasks.
+1. Click **Upload data**.
 
-   1. For this type of task, your TSV file must have one column. Set the header of the column equal to `INPUT:image`.
+1. Create the tasks for Tolokers:
 
-   1. Add links to your images to the TSV file.
+   1. To download a template, click **Template for general tasks in TSV**.
+
+      For this type of project, the TSV file with tasks must have one column. The header of the column equals `INPUT:image`, and the column values are links to the images.
 
    ```plaintext
    INPUT:image
@@ -137,29 +139,25 @@ At this step, upload your task data to Toloka.
    https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/05334365c060421ab25264166bbb4fd1.jpg
    ```
 
-   {% note tip %}
+   1. Open the downloaded file, and replace the sample links with links to your images.
 
-   To see what a file with tasks looks like, download a sample file by clicking **Template for general tasks.tsv**.
+   1. Click **Drop file here or select**, and upload the file you’ve just made.
 
-   {% endnote %}
+   1. Click **Continue**.
 
-1. Upload your file.
+1. Tasks are shown to Tolokers in suites. A suite is a single page with multiple tasks. Define how many tasks to include per suite:
 
-   1. Click **Upload**.
+   - **Number of general tasks**: These are the tasks for Tolokers to label.
+   - **Number of training tasks**: These are tasks with predefined answers and explanations for Tolokers. Normally you use training tasks in separate training pools. You don’t have to include them.
+   - **Number of control tasks**: These are tasks with predefined answers used to control the quality of responses. You will create them in the next step.
 
-   1. In the **File upload settings** window, define how many tasks will be shown on a single page. Choose **Smart mixing** and specify the following options:
+      For example, you can add 9 general tasks and 1 control task per suite:
 
-      - **General tasks**: These are the tasks for Tolokers to label.
-      - **Training tasks**: These are tasks with predefined answers and explanations for Tolokers.
-      - **Control tasks**: These are tasks with predefined answers used to control the quality of responses.
+      <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.png" alt="Upload your file. Step 3" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
-      For example, you can add 9 general tasks and 1 control task per page:
+1. Click **Combine tasks into suites**.
 
-      <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-2.2.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-2.2.png" alt="Upload your file. Step 2.2" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:450px;" /></a>
-
-   1. Click **Upload**, select your file, wait for the uploading to finish, and click **Add**.
-
-1. To create control tasks, add correct answers to several tasks.
+1. To create control tasks, add correct answers to some of your tasks.
 
    1. Click **Edit**.
 
