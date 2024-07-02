@@ -1,5 +1,5 @@
 # ZooKeeperLocker
-`toloka.streaming.locker.ZooKeeperLocker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/streaming/locker.py#L115)
+`toloka.streaming.locker.ZooKeeperLocker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.3/src/streaming/locker.py#L115)
 
 ```python
 ZooKeeperLocker(
